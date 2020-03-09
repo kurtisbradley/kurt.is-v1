@@ -1,0 +1,127 @@
+/* Links */
+.l-m {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding: 0.4rem 0.9rem;
+    margin: 0 0 0 var(--gap-half);
+    color: var(--fg);
+    line-height: 1.2;
+    text-align: center;
+    border-radius: var(--radius);
+}
+
+.l-m:first-of-type {
+    margin: 0;
+}
+
+.l-m:hover,
+.l-m:focus,
+.l-m:active,
+.l-m.active {
+    color: var(--bg);
+    background: var(--fg);
+}
+
+.l-s {
+    background-image: linear-gradient(to right, var(--fg), var(--fg));
+    background-size: 100% 2px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    text-shadow: 0.1em 0 var(--bg), -0.1em 0 var(--bg), 0.05em 0 var(--bg), -0.05em 0 var(--bg); 
+    color: var(--fg);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.l-s:hover,
+.l-s:focus,
+.l-s:active {
+    background-color: var(--fg);
+    color: var(--bg);
+    outline: none;
+    text-shadow: none;
+}
+
+.l-b {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: var(--lighter-gray);
+    border-radius: var(--radius);
+    color: var(--article-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 0 var(--gap) 0 var(--gap);
+}
+
+.l-b:hover,
+.l-b:focus {
+    background: var(--light-gray);
+    color: var(--article-color); 
+}
+
+.l-c {
+    padding: var(--gap-quarter) var(--gap-half);
+    border-radius: var(--radius);
+    font-weight: 500;
+    background-color: var(--lighter-gray);
+    transition: color var(--transition), background-color var(--transition);
+}
+
+.l-c:hover,
+.l-c:focus {
+    outline: none;
+    background: var(--color);
+    color: #fff;
+}
+
+.blue {
+    --color: var(--blue);
+}
+
+.green {
+    --color: var(--green);
+}
+
+.indigo {
+    --color: var(--indigo);
+}
+
+.orange {
+    --color: var(--orange);
+}
+
+.pink {
+    --color: var(--pink);
+}
+
+.purple {
+    --color: var(--purple);
+}
+
+.red {
+    --color: var(--red);
+}
+
+.teal {
+    --color: var(--teal);
+}
+
+.yellow {
+    --color: var(--yellow);
+}
+
+.blue-gray {
+    --color: var(--blue-gray);
+}
+
+.invert {
+    --color: var(--fg);
+}
+
+.invert:hover,
+.invert:focus,
+.invert.active {
+    color: var(--bg);
+}

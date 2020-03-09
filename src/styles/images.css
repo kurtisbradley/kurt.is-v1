@@ -1,0 +1,32 @@
+/* Images */
+.posts .each .gatsby-image-wrapper {
+    margin-top: 0;
+    height: 50px !important;
+    width: 50px !important;
+}
+
+.posts.simple .each .gatsby-image-wrapper,
+section.simple .gatsby-image-wrapper {
+    height: 30px !important;
+    width: 30px !important;
+}
+
+@media (max-width: 600px) {
+    .posts .each .gatsby-image-wrapper {
+        margin-top: 0;
+        height: 30px !important;
+        width: 30px !important;
+    }
+}
+
+.single-post .gatsby-image-wrapper {
+    height: 150px !important;
+    width: 150px !important;
+}
+
+@media (max-width: 600px) {
+    .single-post .gatsby-image-wrapper {
+        height: 50px !important;
+        width: 50px !important;
+    }
+}
