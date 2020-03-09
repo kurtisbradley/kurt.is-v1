@@ -30,3 +30,23 @@ section.simple .gatsby-image-wrapper {
         width: 50px !important;
     }
 }
+
+.single-project .gatsby-image-wrapper {
+    margin-left: calc(-0.25 * var(--main-content));
+    margin-right: calc(-0.25 * var(--main-content));
+    margin-top: var(--small-gap);
+}
+
+@media (max-width: 1100px) {
+    .single-project .gatsby-image-wrapper {
+        margin-left: calc(-0.125 * var(--main-content));
+        margin-right: calc(-0.125 * var(--main-content));
+    }   
+}
+
+@media (max-width: 960px) {
+    .single-project .gatsby-image-wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    } 
+}

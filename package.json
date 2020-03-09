@@ -27,6 +27,7 @@
         "lodash.kebabcase": "^4.1.1",
         "pixi.js": "^5.2.1",
         "react": "^16.13.0",
+        "react-device-detect": "^1.11.14",
         "react-dom": "^16.13.0",
         "react-helmet": "^5.2.1",
         "styled-jsx": "^3.2.4",

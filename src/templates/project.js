@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
+import { BrowserView, MobileView } from "react-device-detect";
 import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import Layout from "../layout";
 import PostTags from "../components/PostTags";
 import Scene from "../components/RGBShift";
@@ -30,8 +32,13 @@ export default class ProjectTemplate extends Component {
                         <p>{post.short}</p>
                     </header>
 
-                    {image && (<Scene image={post.image.childImageSharp.fluid} />)}
-
+                    <BrowserView>
+                        {image && (<Scene image={post.image.childImageSharp.fluid} />)}
+                    </BrowserView>
+                    <MobileView>
+                        {image && (<Img fluid={post.image.childImageSharp.fluid} />)} 
+                    </MobileView>
+   
                     <div className="project-meta">
                         <PostTags tags={post.tags} />
                         <div className="project-links">
@@ -93,6 +100,7 @@ export default class ProjectTemplate extends Component {
                         color: white;
                         display: block;
                         font-size: 0.9rem;
+                        white-space: nowrap;
                     }
 
                     .l-c:hover {
